@@ -92,8 +92,8 @@ Expected outputs: `v23.11.0` for Node.js and the latest Yarn version.
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/bonding_curve.git
-cd bonding_curve
+git clone https://github.com/andi-nugroho/bonding-curve.git
+cd bonding-curve
 yarn
 ```
 
