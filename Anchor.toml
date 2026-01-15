@@ -1,0 +1,77 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+pumpg = "DADtiPM9Jgr53UWxVDUnA7WzBNFj5itGQ8ZamJpSnnGL"
+
+[registry]
+# url = "https://api.testnet.sonic.game"
+url = "https://api.apr.dev"
+
+[provider]
+# cluster = "https://api.testnet.sonic.game"
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[test]
+startup_wait = 5000
+shutdown_wait = 2000
+upgradeable = false
+
+[test.validator]
+bind_address = "0.0.0.0"
+url = "https://few-twilight-wish.solana-mainnet.quiknode.pro/5337a237aaeecd58b8c43a375c78a541aafccf04"
+ledger = ".anchor/test-ledger"
+rpc_port = 8899
+
+[[test.validator.clone]]
+address = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
+
+[[test.validator.clone]]
+address = "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C"
+
+[[test.validator.clone]]
+address = "DNXgeM9EiiaAbaWvwjHj9fQQLAX5ZsfHyvmYUNRAdNC8"
+
+[[test.validator.clone]]
+address = "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2"
+
+[[test.validator.clone]]
+address = "LockrWmn6K5twhz3y9w1dQERbmgSaRkfnTeTKbpofwE"
+
+[[test.validator.clone]]
+address = "3f7GcQFG397GAaEnv51zR6tsTVihYRydnydDD1cXekxH"
+
+[[test.validator.clone]]
+address = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
+
+[[test.validator.clone]]
+address = "SegaXNnoXYTZiqUt9Xn2XqGcL56b25yzXLuJSpadcMu"
+
+[[test.validator.clone]]
+address = "2t1hV2YqnDCPuJZqr7Fy8oAygGwZE5Q9uaQzpLC1QryJ"
+
+[[test.validator.clone]]
+address = "BLxynZeHE123MmQgNJZiV1pwW4VYh46oZYyC66xwmtTY"
+
+[[test.validator.clone]]
+address = "3EM1DkCX88fwm5iCVquSFvhHpFxozCmfcqtN9RVgPebN"
+
+[[test.validator.clone]]
+address = "GfwHKYjbZJewB5YyLvAwJeFWdbYGg7mNk139KVt9qK4v"
+
+[[test.validator.clone]]
+address = "EDp71UK9L9x6AhBMr8D6jNyN3rnXgBjHS3B1T5irfG7g"
+
+[[test.validator.clone]]
+address = "BjZxF9CnEuR1vxXffJwun81i3Doe2C2vQCdJpShxCieM"
+
+[[test.validator.clone]]
+address = "BLxynZeHE123MmQgNJZiV1pwW4VYh46oZYyC66xwmtTY"
